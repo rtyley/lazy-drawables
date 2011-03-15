@@ -26,7 +26,7 @@
     </parent>
     <groupId>com.madgag</groupId>
     <artifactId>lazy-drawables-parent</artifactId>
-    <version>0.8-SNAPSHOT</version>
+    <version>0.8</version>
     <packaging>pom</packaging>
     <name>Lazy Drawables parent POM project</name>
     <description>
