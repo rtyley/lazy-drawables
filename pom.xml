@@ -108,5 +108,29 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <dependencies>
+                  <dependency>
+                    <groupId>org.apache.maven.scm</groupId>
+                    <artifactId>maven-scm-provider-gitexe</artifactId>
+                    <version>1.4</version>
+                  </dependency>
+                </dependencies>
+            </plugin>
+           <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <dependencies>
+                  <dependency>
+                    <groupId>org.apache.maven.scm</groupId>
+                    <artifactId>maven-scm-provider-gitexe</artifactId>
+                    <version>1.4</version>
+                  </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
     </build>
 </project>
