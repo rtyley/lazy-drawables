@@ -48,10 +48,8 @@
         <android.version>2.2.1</android.version>
     </properties>
     <scm>
-        <connection>scm:git:git@github.com:rtyley/lazy-drawables.git
-        </connection>
-        <developerConnection>scm:git:git@github.com:rtyley/lazy-drawables.git
-        </developerConnection>
+        <connection>scm:git:git@github.com:rtyley/lazy-drawables.git</connection>
+        <developerConnection>scm:git:git@github.com:rtyley/lazy-drawables.git</developerConnection>
         <url>git@github.com:rtyley/lazy-drawables.git</url>
     </scm>
     <developers>
