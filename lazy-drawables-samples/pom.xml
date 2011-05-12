@@ -19,12 +19,12 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<version>0.9</version>
+	<version>0.10-SNAPSHOT</version>
 	<groupId>com.madgag</groupId>
 	<artifactId>lazy-drawables-samples</artifactId>
 
 	<parent>
-		<version>0.9</version>
+		<version>0.10-SNAPSHOT</version>
 		<groupId>com.madgag</groupId>
 		<artifactId>lazy-drawables-parent</artifactId>
 	</parent>
@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>com.madgag</groupId>
 			<artifactId>lazy-drawables</artifactId>
-			<version>0.9</version>
+			<version>0.10-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
