@@ -41,7 +41,8 @@ public class AsyncLoadDrawable extends Drawable implements Drawable.Callback {
 
 	public void setDelegate(Drawable delegate) {
 		this.mCurrDrawable = delegate;
-		delegate.setBounds(getBounds());
+		//delegate.setBounds(getBounds());
+        delegate.setBounds(0, 0, delegate.getIntrinsicWidth(), delegate.getIntrinsicHeight());
 		if (delegate instanceof Animatable) {
 			delegate.setCallback(this);
 			delegate.setVisible(true, true);
