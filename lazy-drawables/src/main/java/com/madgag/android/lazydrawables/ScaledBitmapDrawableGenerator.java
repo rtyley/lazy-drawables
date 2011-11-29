@@ -36,6 +36,7 @@ public class ScaledBitmapDrawableGenerator implements ImageProcessor<Bitmap> {
 		sizeInPixels = round(sizeInDIP * scale);
 	}
 
+    @Override
 	public Drawable convert(Bitmap bitmap) {
 		return new BitmapDrawable(resources, createScaledBitmap(bitmap, sizeInPixels, sizeInPixels, true));
 	}
