@@ -94,7 +94,12 @@
                     <artifactId>android-maven-plugin</artifactId>
                     <version>3.0.0</version>
                     <configuration>
-                        <sdk>
+                        <dex>
+                            <jvmArguments>
+                                <jvmArgument>-Xmx512m</jvmArgument>
+                            </jvmArguments>
+                        </dex>
+                        <sdk>dfg
                             <platform>8</platform>
                         </sdk>
                         <emulator>
