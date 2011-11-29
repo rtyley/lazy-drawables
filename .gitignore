@@ -9,6 +9,8 @@ release.properties
 *.iws
 *.iml
 *.ipr
+.idea
+classes
 .classpath
 .project
 .settings
