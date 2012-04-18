@@ -92,19 +92,11 @@
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.1</version>
                     <configuration>
-                        <dex>
-                            <jvmArguments>
-                                <jvmArgument>-Xmx512m</jvmArgument>
-                            </jvmArguments>
-                        </dex>
-                        <sdk>dfg
-                            <platform>8</platform>
+                        <sdk>
+                            <platform>15</platform>
                         </sdk>
-                        <emulator>
-                            <avd>22</avd>
-                        </emulator>
                         <undeployBeforeDeploy>true</undeployBeforeDeploy>
                     </configuration>
                     <extensions>true</extensions>
