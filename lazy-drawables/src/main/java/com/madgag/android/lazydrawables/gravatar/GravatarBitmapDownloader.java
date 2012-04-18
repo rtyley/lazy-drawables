@@ -28,6 +28,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
+import com.madgag.android.io.FlushedInputStream;
 import com.madgag.android.lazydrawables.ImageResourceDownloader;
 
 public class GravatarBitmapDownloader implements ImageResourceDownloader<String, Bitmap> {
@@ -39,7 +40,7 @@ public class GravatarBitmapDownloader implements ImageResourceDownloader<String,
 	public Bitmap get(String gravatarId) {
 		InputStream is = downloadStreamFor(gravatarId);
 		try {
-			return BitmapFactory.decodeStream(is);
+			return BitmapFactory.decodeStream(new FlushedInputStream(is));
 		} finally {
 			closeQuietly(is);
 		}
