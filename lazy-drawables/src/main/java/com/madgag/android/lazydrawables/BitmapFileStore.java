@@ -52,10 +52,17 @@ public class BitmapFileStore<K> implements ImageResourceStore<K, Bitmap> {
 	
 	private File imageFileFor(K key) {
 		ensureDirectory();
-		return new File(storeDirectory, key.toString() + ".png");
+		return new File(storeDirectory, filenameFor(key) + ".png");
 	}
-	
-	
+
+    /**
+     * Can be overridden to provide custom filenames for objects, rather than just
+     * toString().
+     */
+    protected String filenameFor(K key) {
+        return key.toString();
+    }
+
     private void ensureDirectory() {
 		if (!storeDirectory.exists() && !storeDirectory.mkdirs()) {
             throw new RuntimeException("Can't create " + storeDirectory);
